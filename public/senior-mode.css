@@ -1,0 +1,240 @@
+/*
+ * 안암래미안 v7 · 어르신용 큰 글씨 보기
+ * v6 디자인/게시판/사진/보고서 코드에 영향을 주지 않도록
+ * html.senior-mode 클래스로만 동작합니다.
+ * 폰트 확대, 명도 대비, 터치 대상 확대. 모바일 카드는 한 줄 한 개.
+ */
+.senior-toggle {
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 2px solid #277052;
+  border-radius: 11px;
+  background: #fff;
+  color: #184c37;
+  font-size: 15px;
+  font-weight: 850;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px #153a280d;
+}
+.senior-toggle:hover { background:#f0f7f2 }
+.senior-toggle:focus-visible { outline: 3px solid #157f53; outline-offset: 3px }
+.senior-toggle-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 23px;
+  height: 23px;
+  border-radius: 5px;
+  background: #e2f1e8;
+  font-size: 17px;
+  line-height: 1;
+}
+html.senior-mode .senior-toggle {
+  background: #184c37;
+  color: #fff;
+  border-color: #184c37;
+}
+html.senior-mode .senior-toggle-icon { background: #def2e5; color:#184c37 }
+
+/* 기본 가독성 */
+html.senior-mode { font-size: 20px }
+html.senior-mode body { color: #162a22; background: #f7faf7 }
+html.senior-mode .top-inner { min-height: 84px; height: auto; padding-top: 10px; padding-bottom: 10px; gap: 12px }
+html.senior-mode .top-actions { gap: 14px }
+html.senior-mode .brand-copy { font-size: 23px }
+html.senior-mode .brand-copy small { font-size: 14px; color:#3f5c4f }
+html.senior-mode .home-link { font-size: 19px; color:#1c4d36; padding: 11px 4px; min-height: 44px }
+html.senior-mode .hero-inner { padding-top: 76px; padding-bottom: 78px }
+html.senior-mode .hero h1 { font-size: clamp(40px,5.1vw,65px); line-height: 1.38; letter-spacing: -1.5px }
+html.senior-mode .hero p { font-size: 21px; line-height: 1.8; color:#e2eded }
+html.senior-mode .hero-bottom,html.senior-mode .eyebrow,html.senior-mode .section-head .kicker { font-size: 16px }
+html.senior-mode .section-head h2 { font-size: 38px; line-height: 1.3 }
+html.senior-mode .section-head p { font-size: 20px; color:#3c584b; line-height:1.7 }
+html.senior-mode .count { font-size: 17px; color:#3c584b }
+html.senior-mode .category-grid { gap: 24px }
+html.senior-mode .category-card { border: 2px solid #a4bdad }
+html.senior-mode .card-body { padding: 26px }
+html.senior-mode .card-body h3 { font-size: 27px; line-height:1.45 }
+html.senior-mode .card-body p { font-size: 20px; line-height: 1.75; min-height:0; color:#385247 }
+html.senior-mode .card-foot { font-size: 19px; color:#185e45 }
+html.senior-mode .arrow-round { min-width: 44px; min-height: 44px; font-size:24px }
+html.senior-mode .art-tag { font-size: 13px }
+html.senior-mode .info-banner { font-size: 20px; line-height:1.75; color:#284d3c }
+html.senior-mode .footer strong { font-size:22px }
+html.senior-mode .footer p,html.senior-mode .footer span { font-size: 17px; color:#40594c }
+html.senior-mode .back-link { font-size:20px; min-height:44px; align-items:center }
+html.senior-mode .subhero h1 { font-size:43px }
+html.senior-mode .subhero p { font-size:20px; color:#e0eeea }
+html.senior-mode .post-card { padding:30px; border:2px solid #b1c7b9 }
+html.senior-mode .post-card h3 { font-size:25px; line-height:1.45 }
+html.senior-mode .post-card .meta,html.senior-mode .date { font-size:17px; color:#445a4d }
+html.senior-mode .post-card p { font-size:20px; line-height:1.8; color:#385246 }
+html.senior-mode .post-bottom { font-size:19px }
+html.senior-mode .article-title { font-size:clamp(31px,4.5vw,46px); line-height:1.42 }
+html.senior-mode .article-intro { font-size:21px; line-height:1.9; color:#354d42 }
+html.senior-mode .notice { font-size:20px; line-height:1.85; color:#28563e }
+html.senior-mode .gallery-head h3 { font-size:26px }
+html.senior-mode .gallery-head h3 span { font-size:18px!important; color:#405d4c!important }
+html.senior-mode .tabs { gap:12px }
+html.senior-mode .tab { min-height:50px; border:2px solid #70967d; font-size:19px; padding:11px 19px; color:#194b36; font-weight:750 }
+html.senior-mode .tab.active { color:white; border-color:#194e40 }
+html.senior-mode .gallery-grid { grid-template-columns: repeat(3,minmax(0,1fr)); gap:18px }
+html.senior-mode .photo { border:2px solid #ccdcd0; border-radius:13px }
+html.senior-mode .photo strong { font-size:19px; padding:12px 14px 0 }
+html.senior-mode .photo small { font-size:17px; line-height:1.6; padding:4px 14px 15px; color:#375543 }
+html.senior-mode .empty { font-size:20px; color:#385445 }
+html.senior-mode .lightbox { gap:13px }
+html.senior-mode .lightbox button { width:54px; height:54px; font-size:34px; border:1px solid #ffffff91 }
+html.senior-mode .lightbox figcaption { font-size:21px; line-height:1.5 }
+
+/* 승강기 계약 보고서: 텍스트, 그래프, 표 모두 함께 확대 */
+html.senior-mode .spotlight { padding:29px 30px; border:2px solid #9bbdab }
+html.senior-mode .spotlight-tag { font-size:16px }
+html.senior-mode .spotlight h2 { font-size:26px; line-height:1.45 }
+html.senior-mode .spotlight p { font-size:19px; line-height:1.75; color:#395647 }
+html.senior-mode .spotlight-icon { width:66px; height:66px }
+html.senior-mode .spotlight-arrow { width:48px; height:48px }
+html.senior-mode .report-eyebrow { font-size:16px }
+html.senior-mode .report-hero h2 { font-size:clamp(30px,4vw,43px); line-height:1.4 }
+html.senior-mode .report-hero p { font-size:21px; line-height:1.85; color:#edf7f3 }
+html.senior-mode .report-hero-strip span { font-size:18px; padding:12px 15px }
+html.senior-mode .report-stat small { font-size:17px; color:#3b5948 }
+html.senior-mode .report-stat>b { font-size:clamp(25px,2.8vw,34px); white-space:normal; overflow-wrap:anywhere }
+html.senior-mode .report-stat .stat-text { font-size:28px }
+html.senior-mode .report-stat b em { font-size:16px }
+html.senior-mode .report-stat>span { font-size:16px; line-height:1.6; color:#415c4c }
+html.senior-mode .report-stat-feature small,html.senior-mode .report-stat-feature span { color:white }
+html.senior-mode .report-section-head h3 { font-size:29px; line-height:1.5 }
+html.senior-mode .report-section-head p { font-size:19px; color:#40594d }
+html.senior-mode .report-no { font-size:18px; padding:12px }
+html.senior-mode .report-highlight { font-size:20px; line-height:1.75; color:#294e3a }
+html.senior-mode .report-highlight strong { font-size:22px }
+html.senior-mode .report-chart-legend { font-size:17px; line-height:1.6 }
+html.senior-mode .report-bar-row { grid-template-columns:190px 1fr 99px; min-height:43px; font-size:17px; gap:11px }
+html.senior-mode .report-bar-label { font-size:16px; color:#2e4e3a }
+html.senior-mode .report-bar-value { font-size:17px; color:#204d38 }
+html.senior-mode .report-bar-value small { font-size:14px }
+html.senior-mode .report-fine { font-size:17px; line-height:1.85; color:#3f5b4a }
+html.senior-mode .report-story h4 { font-size:23px }
+html.senior-mode .report-story p { font-size:19px; line-height:1.85; color:#3b5244 }
+html.senior-mode .report-subtitle { font-size:23px }
+html.senior-mode .report-warning { font-size:18px; line-height:1.8; color:#6c4e22 }
+html.senior-mode .report-warning strong { font-size:20px }
+html.senior-mode .norm-row { grid-template-columns:170px 1fr 135px; min-height:82px }
+html.senior-mode .norm-label strong { font-size:18px }
+html.senior-mode .norm-label small { font-size:15px; color:#426450 }
+html.senior-mode .norm-value strong { font-size:20px }
+html.senior-mode .norm-value strong small { font-size:14px }
+html.senior-mode .norm-value>small { font-size:16px; color:#3d6149 }
+html.senior-mode .timeline-item>span { font-size:18px }
+html.senior-mode .timeline-item strong { font-size:21px }
+html.senior-mode .timeline-item p { font-size:18px; color:#3d5647 }
+html.senior-mode .report-details>summary { font-size:21px; min-height:60px; align-items:center }
+html.senior-mode .report-table { font-size:18px; min-width:1050px }
+html.senior-mode .report-table thead th { font-size:18px; color:#2d4b36 }
+html.senior-mode .report-table th,html.senior-mode .report-table td { padding:16px 13px }
+html.senior-mode .row-tag { font-size:14px; padding:5px 8px }
+html.senior-mode .before-label { font-size:14px; color:#6c4a24 }
+html.senior-mode .report-ending b { font-size:24px }
+html.senior-mode .report-ending p { font-size:20px; color:#335643 }
+
+@media (max-width: 850px) {
+  html.senior-mode .category-grid, html.senior-mode .posts { grid-template-columns: 1fr }
+  html.senior-mode .gallery-grid { grid-template-columns:repeat(2,minmax(0,1fr)) }
+  html.senior-mode .report-stat-grid { grid-template-columns:repeat(2,minmax(0,1fr)) }
+  html.senior-mode .report-story-grid { grid-template-columns:1fr }
+}
+@media (max-width: 700px) {
+  .senior-toggle { padding:9px 10px; font-size:14px; gap:5px }
+  .senior-toggle-icon { width:20px; height:20px; font-size:15px }
+  .top-actions { gap:10px }
+  html.senior-mode .top-inner { min-height:74px; padding-top:8px; padding-bottom:8px }
+  html.senior-mode .top-actions { gap:9px }
+  html.senior-mode .brand-copy { font-size:18px }
+  html.senior-mode .brand-copy small { font-size:11px }
+  html.senior-mode .home-link { font-size:17px; padding:11px 0 }
+  html.senior-mode .hero-inner { padding-top:53px; padding-bottom:58px }
+  html.senior-mode .hero h1 { font-size:clamp(33px,8vw,41px); line-height:1.5; letter-spacing:-1px }
+  html.senior-mode .hero p { font-size:19px; line-height:1.8 }
+  html.senior-mode .hero p br { display:none }
+  html.senior-mode .section-head { gap:10px; align-items:flex-start }
+  html.senior-mode .section-head h2 { font-size:30px }
+  html.senior-mode .section-head p { font-size:18px }
+  html.senior-mode .card-art { height:200px }
+  html.senior-mode .card-body { padding:23px }
+  html.senior-mode .card-body h3 { font-size:26px }
+  html.senior-mode .card-body p { font-size:19px; min-height:0 }
+  html.senior-mode .card-foot { font-size:18px }
+  html.senior-mode .info-banner { font-size:18px }
+  html.senior-mode .subhero h1 { font-size:34px }
+  html.senior-mode .subhero p { font-size:18px }
+  html.senior-mode .article { padding:21px }
+  html.senior-mode .article-intro { font-size:19px }
+  html.senior-mode .notice { font-size:18px }
+  html.senior-mode .post-card h3 { font-size:24px }
+  html.senior-mode .post-card p { font-size:19px }
+  html.senior-mode .photo strong { font-size:17px }
+  html.senior-mode .photo small { font-size:15px }
+  html.senior-mode .gallery-head h3 { font-size:23px }
+  html.senior-mode .lightbox { padding:9px; gap:4px }
+  html.senior-mode .lightbox button { width:39px; height:50px; font-size:27px; border-radius:8px }
+  html.senior-mode .lightbox figure { max-width:calc(100vw - 94px) }
+  html.senior-mode .lightbox figcaption { font-size:18px }
+  html.senior-mode .spotlight { padding:22px 17px }
+  html.senior-mode .spotlight-icon { display:none }
+  html.senior-mode .spotlight h2 { font-size:22px }
+  html.senior-mode .spotlight p { font-size:17px }
+  html.senior-mode .spotlight-tag { font-size:14px }
+  html.senior-mode .report-hero h2 { font-size:clamp(27px,7vw,37px) }
+  html.senior-mode .report-hero p { font-size:19px }
+  html.senior-mode .report-hero-strip span { font-size:16px }
+  html.senior-mode .report-section-head h3 { font-size:24px }
+  html.senior-mode .report-section-head p { font-size:18px }
+  html.senior-mode .report-highlight { font-size:18px }
+  html.senior-mode .report-highlight strong { font-size:19px }
+  html.senior-mode .raw-chart { padding:12px }
+  html.senior-mode .report-bar-row {
+    display:grid; grid-template-columns:minmax(0,1fr) auto;
+    gap:6px 12px; min-height:72px; padding:9px 3px; align-items:center;
+    border-bottom:1px solid #dfe9e1;
+  }
+  html.senior-mode .report-bar-label { grid-row:1; grid-column:1; font-size:17px; white-space:normal; overflow:visible; text-overflow:clip }
+  html.senior-mode .report-bar-value { grid-row:1; grid-column:2; font-size:18px }
+  html.senior-mode .report-bar-track { grid-row:2; grid-column:1/-1; height:12px }
+  html.senior-mode .norm-row {
+    grid-template-columns:minmax(0,1fr) auto; gap:8px 10px;
+    min-height:90px; padding:11px 7px;
+  }
+  html.senior-mode .norm-label { grid-row:1; grid-column:1 }
+  html.senior-mode .norm-value { grid-row:1; grid-column:2 }
+  html.senior-mode .norm-track { grid-row:2; grid-column:1/-1; height:15px }
+  html.senior-mode .norm-label strong { font-size:17px }
+  html.senior-mode .norm-label small { font-size:14px }
+  html.senior-mode .norm-value strong { font-size:18px }
+  html.senior-mode .norm-value>small { font-size:14px }
+  html.senior-mode .timeline-item { grid-template-columns:1fr; gap:5px }
+  html.senior-mode .report-hero-strip { gap:9px }
+  html.senior-mode .report-stat>b { font-size:26px }
+  html.senior-mode .report-stat small { font-size:15px }
+  html.senior-mode .report-stat>span { font-size:14px }
+  html.senior-mode .report-story p,html.senior-mode .report-ending p { font-size:18px }
+}
+@media (max-width: 370px) {
+  .senior-toggle { gap:4px; padding:8px 9px; font-size:13px }
+  .senior-toggle-icon { display:none }
+  html.senior-mode .brand-symbol { width:34px; height:34px; font-size:20px }
+  html.senior-mode .brand { gap:7px }
+  html.senior-mode .brand-copy { font-size:16px }
+  html.senior-mode .brand-copy small { font-size:10px }
+  html.senior-mode .top-actions { gap:7px }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.senior-mode *,html.senior-mode *::before,html.senior-mode *::after { animation-duration:0.01ms!important; transition-duration:0.01ms!important; scroll-behavior:auto!important }
+}
+@media print { .senior-toggle { display:none!important } }
+/* 좁은 화면에서 '4개 분야'가 여러 줄로 찢어지지 않도록 보정 */
+html.senior-mode .section-head > div { min-width: 0 }
+html.senior-mode .section-head .count { flex: 0 0 auto; white-space: nowrap }
