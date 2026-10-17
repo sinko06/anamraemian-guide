@@ -1,0 +1,1111 @@
+/* 입주민 FAQ : 기존 홈페이지의 녹색·남색 톤 유지 */
+.top-actions .faq-nav-link {
+    font-size: 14px;
+    font-weight: 800;
+    color: #1e735d;
+    border-radius: 24px;
+    padding: 9px 14px;
+    background: #e9f4ee
+}
+
+.faq-entry {
+    padding: 42px 0 12px
+}
+
+.faq-entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 12px;
+    margin-bottom: 17px
+}
+
+.faq-entry-head .kicker {
+    font-size: 12px;
+    color: #277d64;
+    font-weight: 800;
+    letter-spacing: 1.3px
+}
+
+.faq-entry-head h2 {
+    font-size: 27px;
+    letter-spacing: -.8px;
+    margin: 6px 0 0
+}
+
+.faq-entry-head a {
+    color: #237b60;
+    font-size: 13px;
+    font-weight: 800
+}
+
+.faq-entry-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 10px
+}
+
+.faq-entry-grid a {
+    background: #fff;
+    border: 1px solid #deebe4;
+    border-radius: 14px;
+    padding: 17px 14px;
+    transition: transform .15s, box-shadow .15s;
+    display: flex;
+    flex-direction: column;
+    min-height: 136px
+}
+
+.faq-entry-grid a:hover,
+.faq-topic-grid a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 9px 24px #1b4f3815
+}
+
+.faq-entry-grid span {
+    font-size: 12px;
+    font-weight: 800;
+    color: #3b9274
+}
+
+.faq-entry-grid strong {
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 1.55;
+    letter-spacing: -.3px
+}
+
+.faq-entry-grid small {
+    color: #377d67;
+    margin-top: auto;
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: 700
+}
+
+.faq-hero {
+    background: radial-gradient(circle at 88% 10%, #236257 0, transparent 40%), #112e38;
+    color: white;
+    padding: 64px 0 62px
+}
+
+.faq-home-link {
+    display: inline-block;
+    color: #b8d5c8;
+    font-size: 14px;
+    margin-bottom: 27px;
+    font-weight: 700
+}
+
+.faq-hero h1 {
+    font-size: clamp(34px, 5vw, 52px);
+    line-height: 1.3;
+    letter-spacing: -1.5px;
+    margin: 16px 0 16px
+}
+
+.faq-hero h1 em {
+    font-style: normal;
+    color: #91ddbe
+}
+
+.faq-hero p {
+    font-size: 17px;
+    color: #d1e0da;
+    line-height: 1.85;
+    margin: 0
+}
+
+.faq-revision {
+    color: #c1d6cd;
+    margin-top: 25px;
+    font-size: 12px
+}
+
+.faq-content {
+    padding-top: 40px
+}
+
+.faq-topic-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 13px
+}
+
+.faq-topic-grid a {
+    background: white;
+    border: 1px solid #dde8e3;
+    padding: 23px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    transition: transform .15s, box-shadow .15s
+}
+
+.faq-topic-grid a:first-child {
+    grid-row: span 2;
+    background: #e7f3eb;
+    border-color: #cbded3
+}
+
+.faq-topic-count {
+    font-size: 12px;
+    color: #318068;
+    font-weight: 800
+}
+
+.faq-topic-grid strong {
+    font-size: 19px;
+    line-height: 1.5;
+    letter-spacing: -.5px
+}
+
+.faq-topic-grid small {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #647d71
+}
+
+.faq-topic-arrow {
+    font-size: 12px;
+    color: #268567;
+    margin-top: auto;
+    font-weight: 800
+}
+
+.faq-general-note {
+    margin: 20px 0 54px;
+    font-size: 14px;
+    color: #5d786c;
+    line-height: 1.8;
+    border-left: 4px solid #5c9b80;
+    padding: 6px 0 6px 16px
+}
+
+.faq-state {
+    font-weight: 800
+}
+
+.faq-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 27px
+}
+
+.resident-faq-article {
+    background: #fff;
+    border: 1px solid #e0e9e4;
+    box-shadow: 0 8px 25px #23392c08;
+    border-radius: 18px;
+    padding: clamp(21px, 4vw, 43px);
+    scroll-margin-top: 100px
+}
+
+.faq-article-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e4ece7
+}
+
+.faq-index {
+    font-size: 18px;
+    font-weight: 800;
+    color: #2b8c70;
+    background: #e7f5ed;
+    padding: 13px;
+    border-radius: 13px
+}
+
+.faq-chip {
+    font-size: 12px;
+    color: #32866a;
+    font-weight: 800
+}
+
+.faq-article-header h2 {
+    font-size: clamp(23px, 3vw, 29px);
+    letter-spacing: -.9px;
+    line-height: 1.45;
+    margin: 6px 0 0
+}
+
+.faq-article-body {
+    font-size: 15px;
+    line-height: 1.85;
+    color: #4d6158
+}
+
+.faq-lead {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #354d43;
+    margin: 26px 0
+}
+
+.faq-article-body h4 {
+    font-size: 15px;
+    margin: 6px 0 12px;
+    color: #314d40
+}
+
+.faq-duo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 26px 0
+}
+
+.faq-number {
+    padding: 24px;
+    border-radius: 14px;
+    background: #f1f4f2;
+    border: 1px solid #e5ece7
+}
+
+.faq-number.proposed {
+    background: #eaf7ef;
+    border: 1px solid #c9e5d2
+}
+
+.faq-number span {
+    display: block;
+    font-size: 13px;
+    font-weight: 800;
+    color: #607d6b
+}
+
+.faq-number strong {
+    display: block;
+    font-size: 42px;
+    font-weight: 850;
+    letter-spacing: -1.4px;
+    color: #314f43;
+    line-height: 1.2;
+    margin: 8px 0
+}
+
+.faq-number.proposed strong {
+    color: #17755b
+}
+
+.faq-number small {
+    font-size: 21px
+}
+
+.faq-number p {
+    font-size: 12px;
+    color: #67786d;
+    margin: 0
+}
+
+.faq-callout {
+    background: #eaf5ed;
+    border: 1px solid #d9e9dc;
+    padding: 21px 23px;
+    border-radius: 13px;
+    margin: 25px 0
+}
+
+.faq-callout.neutral {
+    background: #f4f6f5;
+    border-color: #e2e9e4
+}
+
+.faq-callout strong,
+.faq-check>strong {
+    font-size: 16px;
+    color: #225f4a
+}
+
+.faq-callout p,
+.faq-check p {
+    margin: 10px 0 0
+}
+
+.faq-callout p+p,
+.faq-check p+p {
+    margin-top: 12px
+}
+
+.faq-tables {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    margin: 28px 0
+}
+
+.faq-table-scroll {
+    max-width: 100%;
+    overflow-x: auto;
+    border: 1px solid #dee8e2;
+    border-radius: 11px
+}
+
+.faq-table {
+    border-collapse: collapse;
+    font-size: 13px;
+    line-height: 1.45;
+    width: 100%;
+    white-space: nowrap
+}
+
+.faq-table th {
+    text-align: left;
+    background: #e9f0ec;
+    color: #416354;
+    padding: 12px 10px
+}
+
+.faq-table td {
+    padding: 11px 10px;
+    border-top: 1px solid #e8efeb
+}
+
+.faq-table td:not(:first-child) {
+    font-variant-numeric: tabular-nums
+}
+
+.faq-table tr:nth-child(even) {
+    background: #fbfdfa
+}
+
+.faq-table-strong {
+    font-weight: 850;
+    color: #207153
+}
+
+.faq-fine {
+    font-size: 12px;
+    color: #73857a;
+    line-height: 1.75
+}
+
+.faq-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin: 24px 0
+}
+
+.faq-stat {
+    background: #eef6f0;
+    border-radius: 12px;
+    padding: 18px
+}
+
+.faq-stat span {
+    display: block;
+    font-size: 12px;
+    font-weight: 800;
+    color: #59816c
+}
+
+.faq-stat strong {
+    font-size: 29px;
+    color: #22694f;
+    line-height: 1.5
+}
+
+.faq-stat small {
+    font-size: 13px;
+    margin-left: 4px
+}
+
+.faq-check {
+    padding: 22px;
+    border-radius: 12px;
+    background: #f6f8f4;
+    border-left: 4px solid #78ab90;
+    margin: 23px 0
+}
+
+.faq-bullet-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin: 23px 0
+}
+
+.faq-bullet-grid>div {
+    border: 1px solid #e0ebe4;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px
+}
+
+.faq-bullet-grid strong {
+    display: block;
+    color: #256c51;
+    font-size: 15px
+}
+
+.faq-bullet-grid p {
+    margin: 9px 0 0
+}
+
+.faq-budget {
+    border-radius: 15px;
+    background: #122f38;
+    padding: 23px 24px;
+    color: #d9e9e1;
+    margin: 26px 0
+}
+
+.faq-budget>span {
+    font-size: 14px;
+    font-weight: 800
+}
+
+.faq-budget-numbers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    margin: 22px 0
+}
+
+.faq-budget-numbers>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.faq-budget-numbers small {
+    color: #b8cfc5;
+    font-size: 12px
+}
+
+.faq-budget-numbers strong {
+    font-size: clamp(22px, 3.5vw, 31px);
+    color: white;
+    white-space: nowrap
+}
+
+.faq-budget-numbers>div:last-child strong {
+    color: #9de6c3
+}
+
+.faq-budget-arrow {
+    font-size: 24px;
+    color: #9de6c3
+}
+
+.faq-budget p {
+    margin-bottom: 0;
+    color: #d2e0d8
+}
+
+.faq-steps {
+    margin: 24px 0 24px;
+    padding-left: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px
+}
+
+.faq-steps li {
+    padding-left: 7px
+}
+
+.faq-steps li::marker {
+    font-weight: 850;
+    color: #318969
+}
+
+.faq-steps strong {
+    font-size: 16px;
+    color: #2a604c
+}
+
+.faq-steps p {
+    margin: 6px 0
+}
+
+.faq-source {
+    padding-top: 18px;
+    border-top: 1px solid #e3ebe6;
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap
+}
+
+.faq-source-link {
+    background: #eef5f0;
+    color: #226d51;
+    border-radius: 9px;
+    padding: 9px 12px;
+    font-size: 13px;
+    font-weight: 800
+}
+
+.faq-source-link:hover {
+    background: #dfeee3
+}
+
+.faq-source>span {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    color: #798b7e
+}
+
+.faq-back {
+    text-align: right;
+    padding-top: 16px
+}
+
+.faq-back a {
+    color: #45866b;
+    font-weight: 800;
+    font-size: 12px
+}
+
+.faq-finish {
+    background: #e6f2e9;
+    border-radius: 15px;
+    margin-top: 32px;
+    padding: 30px;
+    color: #375d49
+}
+
+.faq-finish strong {
+    font-size: 20px
+}
+
+.faq-finish p {
+    line-height: 1.75
+}
+
+.faq-finish a {
+    font-weight: 800;
+    color: #227959
+}
+
+@media(max-width:800px) {
+    .faq-entry-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr))
+    }
+
+    .faq-tables {
+        grid-template-columns: 1fr
+    }
+
+    .faq-topic-grid {
+        grid-template-columns: 1fr
+    }
+
+    .faq-topic-grid a:first-child {
+        grid-row: auto
+    }
+}
+
+@media(max-width:600px) {
+    .faq-entry {
+        padding-top: 28px
+    }
+
+    .faq-entry-head h2 {
+        font-size: 23px
+    }
+
+    .faq-entry-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    .faq-entry-grid a {
+        min-height: 118px;
+        padding: 14px
+    }
+
+    .faq-entry-grid strong {
+        font-size: 14px
+    }
+
+    .faq-entry-head a {
+        font-size: 12px
+    }
+
+    .top-actions .faq-nav-link {
+        padding: 8px 9px;
+        font-size: 12px
+    }
+
+    .faq-hero {
+        padding: 44px 0
+    }
+
+    .faq-hero p {
+        font-size: 14px
+    }
+
+    .faq-topic-grid a {
+        padding: 19px
+    }
+
+    .faq-topic-grid strong {
+        font-size: 17px
+    }
+
+    .faq-general-note {
+        margin-bottom: 30px
+    }
+
+    .resident-faq-article {
+        scroll-margin-top: 85px
+    }
+
+    .faq-article-header {
+        gap: 12px
+    }
+
+    .faq-index {
+        font-size: 14px;
+        padding: 10px
+    }
+
+    .faq-lead {
+        font-size: 16px
+    }
+
+    .faq-duo,
+    .faq-bullet-grid {
+        grid-template-columns: 1fr
+    }
+
+    .faq-number strong {
+        font-size: 37px
+    }
+
+    .faq-stat-grid {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .faq-stat strong {
+        font-size: 25px
+    }
+
+    .faq-budget-numbers {
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: flex-start
+    }
+
+    .faq-budget-numbers small {
+        font-size: 11px
+    }
+
+    .faq-budget-numbers strong {
+        font-size: 25px
+    }
+
+    .faq-budget-arrow {
+        font-size: 17px
+    }
+
+    .faq-article-body {
+        font-size: 14px
+    }
+
+    .faq-check,
+    .faq-callout {
+        padding: 17px
+    }
+
+    .faq-finish {
+        padding: 22px
+    }
+}
+
+
+/* ==========================================
+   안암래미안 입주민 FAQ
+   어르신용 큰 글씨 모드 지원
+   기존 큰 글씨 버튼과 자동 연동
+   ========================================== */
+
+/* 홈 화면 FAQ 안내 */
+html.senior-mode .top-actions .faq-nav-link {
+  font-size: 19px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  color: #18553d;
+}
+
+html.senior-mode .faq-entry-head .kicker {
+  font-size: 17px;
+}
+
+html.senior-mode .faq-entry-head h2 {
+  font-size: 34px;
+  line-height: 1.4;
+}
+
+html.senior-mode .faq-entry-head a {
+  font-size: 19px;
+}
+
+html.senior-mode .faq-entry-grid {
+  gap: 15px;
+}
+
+html.senior-mode .faq-entry-grid a {
+  padding: 22px;
+  min-height: 160px;
+  border: 2px solid #b4d1be;
+}
+
+html.senior-mode .faq-entry-grid span,
+html.senior-mode .faq-entry-grid small {
+  font-size: 16px;
+}
+
+html.senior-mode .faq-entry-grid strong {
+  font-size: 21px;
+  line-height: 1.6;
+}
+
+/* FAQ 상단 제목 */
+html.senior-mode .faq-hero h1 {
+  font-size: clamp(39px, 5vw, 60px);
+  line-height: 1.4;
+}
+
+html.senior-mode .faq-hero p {
+  font-size: 21px;
+  line-height: 1.85;
+  color: #edf7f2;
+}
+
+html.senior-mode .faq-home-link {
+  font-size: 19px;
+  color: #e2f2e9;
+}
+
+html.senior-mode .faq-revision {
+  font-size: 16px;
+  color: #e0eee5;
+}
+
+/* FAQ 5개 질문 카드 */
+html.senior-mode .faq-topic-grid {
+  gap: 18px;
+}
+
+html.senior-mode .faq-topic-grid a {
+  padding: 28px;
+  border: 2px solid #adc9b8;
+}
+
+html.senior-mode .faq-topic-count {
+  font-size: 17px;
+}
+
+html.senior-mode .faq-topic-grid strong {
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+html.senior-mode .faq-topic-grid small {
+  font-size: 19px;
+  line-height: 1.7;
+  color: #365d49;
+}
+
+html.senior-mode .faq-topic-arrow {
+  font-size: 18px;
+}
+
+html.senior-mode .faq-general-note {
+  font-size: 19px;
+  line-height: 1.8;
+  color: #365848;
+}
+
+/* FAQ 본문 */
+html.senior-mode .resident-faq-article {
+  border: 2px solid #cadbd0;
+  scroll-margin-top: 125px;
+}
+
+html.senior-mode .faq-index {
+  font-size: 23px;
+}
+
+html.senior-mode .faq-chip {
+  font-size: 17px;
+}
+
+html.senior-mode .faq-article-header h2 {
+  font-size: clamp(28px, 3.4vw, 37px);
+  line-height: 1.5;
+}
+
+html.senior-mode .faq-article-body {
+  font-size: 20px;
+  line-height: 1.9;
+  color: #294a39;
+}
+
+html.senior-mode .faq-lead {
+  font-size: 23px;
+  line-height: 1.85;
+  color: #214532;
+}
+
+html.senior-mode .faq-article-body h4 {
+  font-size: 22px;
+}
+
+/* 장기수선충당금 요율 비교 */
+html.senior-mode .faq-number {
+  padding: 27px;
+}
+
+html.senior-mode .faq-number span {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+html.senior-mode .faq-number strong {
+  font-size: 46px;
+  overflow-wrap: anywhere;
+}
+
+html.senior-mode .faq-number small {
+  font-size: 23px;
+}
+
+html.senior-mode .faq-number p {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* 강조 안내문 */
+html.senior-mode .faq-callout,
+html.senior-mode .faq-check {
+  padding: 27px;
+  line-height: 1.9;
+}
+
+html.senior-mode .faq-callout strong,
+html.senior-mode .faq-check > strong {
+  font-size: 23px;
+  line-height: 1.6;
+}
+
+/* 요율표 */
+html.senior-mode .faq-table {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+html.senior-mode .faq-table th,
+html.senior-mode .faq-table td {
+  padding: 15px 12px;
+}
+
+html.senior-mode .faq-table-scroll {
+  overflow-x: auto;
+}
+
+html.senior-mode .faq-fine {
+  font-size: 16px;
+  line-height: 1.85;
+  color: #486252;
+}
+
+/* 승강기 비용 */
+html.senior-mode .faq-stat span {
+  font-size: 17px;
+}
+
+html.senior-mode .faq-stat strong {
+  font-size: 36px;
+}
+
+html.senior-mode .faq-stat small {
+  font-size: 18px;
+}
+
+/* 외벽 도색 설명 */
+html.senior-mode .faq-bullet-grid strong {
+  font-size: 22px;
+}
+
+html.senior-mode .faq-budget > span {
+  font-size: 20px;
+}
+
+html.senior-mode .faq-budget-numbers small {
+  font-size: 17px;
+}
+
+html.senior-mode .faq-budget-numbers strong {
+  font-size: clamp(26px, 3vw, 36px);
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+html.senior-mode .faq-budget p {
+  color: #f0f8f3;
+}
+
+/* 주민 투표 안내 */
+html.senior-mode .faq-steps {
+  gap: 23px;
+}
+
+html.senior-mode .faq-steps strong {
+  font-size: 23px;
+  line-height: 1.6;
+}
+
+/* 자료 링크 */
+html.senior-mode .faq-source-link {
+  font-size: 18px;
+  padding: 14px 17px;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+}
+
+html.senior-mode .faq-source > span {
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+html.senior-mode .faq-back a {
+  font-size: 18px;
+}
+
+html.senior-mode .faq-finish strong {
+  font-size: 26px;
+}
+
+html.senior-mode .faq-finish p,
+html.senior-mode .faq-finish a {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* ==========================================
+   모바일 큰 글씨 모드
+   ========================================== */
+
+@media (max-width: 850px) {
+  html.senior-mode .faq-entry-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  html.senior-mode .faq-topic-grid,
+  html.senior-mode .faq-tables,
+  html.senior-mode .faq-bullet-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+
+  html.senior-mode .faq-entry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  html.senior-mode .faq-entry-grid a {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  html.senior-mode .faq-hero h1 {
+    font-size: 37px;
+  }
+
+  html.senior-mode .faq-hero p {
+    font-size: 19px;
+  }
+
+  html.senior-mode .faq-hero p br {
+    display: none;
+  }
+
+  html.senior-mode .faq-topic-grid strong {
+    font-size: 23px;
+  }
+
+  html.senior-mode .faq-topic-grid small {
+    font-size: 18px;
+  }
+
+  html.senior-mode .resident-faq-article {
+    padding: 20px;
+    scroll-margin-top: 110px;
+  }
+
+  html.senior-mode .faq-article-header h2 {
+    font-size: 27px;
+  }
+
+  html.senior-mode .faq-article-body {
+    font-size: 19px;
+    line-height: 1.85;
+  }
+
+  html.senior-mode .faq-lead {
+    font-size: 21px;
+  }
+
+  html.senior-mode .faq-duo,
+  html.senior-mode .faq-stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  html.senior-mode .faq-number strong {
+    font-size: 40px;
+  }
+
+  html.senior-mode .faq-budget-numbers {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  html.senior-mode .faq-budget-arrow {
+    align-self: center;
+    transform: rotate(90deg);
+  }
+
+  html.senior-mode .faq-table {
+    font-size: 17px;
+  }
+
+  html.senior-mode .faq-callout,
+  html.senior-mode .faq-check {
+    padding: 20px;
+  }
+
+  html.senior-mode .faq-callout strong,
+  html.senior-mode .faq-check > strong,
+  html.senior-mode .faq-steps strong {
+    font-size: 21px;
+  }
+
+  html.senior-mode .faq-source-link {
+    font-size: 17px;
+  }
+}
+
+/* 상단 FAQ 카드와 첫 번째 본문 사이 간격 */
+.faq-articles {
+  margin-top: 60px;
+}
+
+/* 모바일에서는 간격을 조금 줄임 */
+@media (max-width: 600px) {
+  .faq-articles {
+    margin-top: 40px;
+  }
+}
