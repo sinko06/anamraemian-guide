@@ -38,7 +38,7 @@
       <div class="report-stat"><small>계약 업체·연월</small><b class="stat-text">티케이</b><span>2026년 5월</span></div>
     </div>
     <section class="report-section">
-      <div class="report-section-head"><span class="report-no">01</span><div><h3>비교자료 속 우리 아파트 계약금액</h3><p>승강기 교체 계약 관련 조사자료 19개 단지의 대당 금액을 나란히 표시했습니다.</p></div></div>
+      <div class="report-section-head"><span class="report-no">01</span><div><h3>비교자료 속 우리 아파트 계약금액</h3><p>최근 1년간의 승강기 교체 계약 관련 조사자료 19개 단지의 대당 금액을 나란히 표시했습니다.</p></div></div>
       <div class="report-highlight"><strong>${others.length}개 비교 단지 중 <em>${higher}곳</em></strong><span>에서 자료상 대당 금액이 안암래미안의 4,909만원보다 높았습니다.</span></div>
       <div class="report-chart-legend"><span><i class="legend-before"></i> 이란 전쟁 이전 계약</span><span><i class="legend-ours"></i> 안암래미안</span><span><i class="legend-other"></i> 그 외</span></div><div class="raw-chart" aria-label="19개 단지의 승강기 대당 계약금액 비교. 안암래미안 4,909만원.">${rawChart}</div>
       <p class="report-fine">출처: ${contextLinks}</p>
