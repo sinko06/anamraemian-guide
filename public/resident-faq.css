@@ -1098,14 +1098,90 @@ html.senior-mode .faq-finish a {
   }
 }
 
-/* 상단 FAQ 카드와 첫 번째 본문 사이 간격 */
+
+/* FAQ 카드와 상세 본문 구분 */
 .faq-articles {
-  margin-top: 60px;
+  margin-top: 36px;
 }
 
-/* 모바일에서는 간격을 조금 줄임 */
+
+/* 구분선 + 동그란 아래쪽 화살표 */
+.faq-articles::before {
+  content: "↓";
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  text-align: center;
+  margin: 0 auto;
+
+  color: #287958;
+  font-size: 20px;
+  font-weight: 800;
+
+  background: #edf6ef;
+  border: 1px solid #cfe3d5;
+  border-radius: 50%;
+
+  box-sizing: border-box;
+}
+
+/* 양옆 구분선 */
+.faq-articles {
+  background-image:
+    linear-gradient(#d8e5de, #d8e5de),
+    linear-gradient(#d8e5de, #d8e5de);
+  background-size:
+    calc(50% - 32px) 1px,
+    calc(50% - 32px) 1px;
+  background-position:
+    left 20px,
+    right 20px;
+  background-repeat: no-repeat;
+}
+
+
+/* 모바일 */
 @media (max-width: 600px) {
   .faq-articles {
-    margin-top: 40px;
+    margin-top: 24px;
+  }
+}
+
+/* 모바일 큰 글씨 모드: 요율표 줄바꿈 */
+@media (max-width: 600px) {
+
+  html.senior-mode .faq-table {
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  html.senior-mode .faq-table th,
+  html.senior-mode .faq-table td {
+    padding: 13px 6px;
+  }
+
+  /* 기간은 공간에 맞춰 두 줄로 표시 */
+  html.senior-mode .faq-table th:first-child,
+  html.senior-mode .faq-table td:first-child {
+    width: 42%;
+    white-space: normal;
+  }
+
+  /* 모을 비율 */
+  html.senior-mode .faq-table th:nth-child(2) {
+    width: 32%;
+    white-space: normal;
+  }
+
+  /* 누적 */
+  html.senior-mode .faq-table th:nth-child(3) {
+    width: 26%;
+  }
+
+  /* 비율 숫자는 한 줄로 유지 */
+  html.senior-mode .faq-table td:nth-child(2),
+  html.senior-mode .faq-table td:nth-child(3) {
+    white-space: nowrap;
   }
 }
